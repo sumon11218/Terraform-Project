@@ -16,7 +16,7 @@ resource "aws_instance" "RHEL-Server" {
     encrypted   = true
   }
 
-resource "aws_instance" "Ubuntu-Linux" {
+resource "aws_instance" "Ubuntu-Server" {
   count         = 1
   ami           = "ami-07d9b9ddc6cd8dd30"
   instance_type = "t2.micro"
