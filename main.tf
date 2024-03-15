@@ -15,6 +15,7 @@ resource "aws_instance" "RHEL-Server" {
     volume_type = "gp3"
     encrypted   = true
   }
+}
 
 resource "aws_instance" "Ubuntu-Server" {
   count         = 1
